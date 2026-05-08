@@ -55,10 +55,6 @@ jobs:
         run: npm run build
         # run: npx nx build portfolio
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./apps/portfolio/portfolio
 
   deploy:
     environment:
