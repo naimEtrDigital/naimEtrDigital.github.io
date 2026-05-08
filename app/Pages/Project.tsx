@@ -4,8 +4,16 @@ import { X } from "lucide-react";
 import { EmblaOptionsType } from "embla-carousel";
 import { EmblaModalCarousel } from "../Tools/ImageSlider/EmblaCarouselModal";
 
+interface ProjectItem {
+  id: number;
+  title: string;
+  images: string[];
+  stack: string;
+  detail: string;
+}
+
 export default function Project() {
-  const [selectedCard, setSelectedCard] = useState(null);
+  const [selectedCard, setSelectedCard] =  useState<ProjectItem | null>(null);
   // Inside your component, after useState
   useEffect(() => {
     if (selectedCard) {

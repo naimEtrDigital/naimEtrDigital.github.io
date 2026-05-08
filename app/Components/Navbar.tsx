@@ -191,7 +191,7 @@ export default function Navbar() {
                   }}
                   //     onClick={()=> {setWebsiteConfig(prev => ({...prev, sideBarView: !prev.sideBarView}))}}
                 >
-                  <item.icon className="w-5 h-5" />
+                  {/* <item.icon className="w-5 h-5" /> */}
                   <span>{item.name}</span>
                 </a>
               ))}

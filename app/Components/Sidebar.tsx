@@ -29,7 +29,7 @@ export default function Sidebar() {
               }}
               className={`flex items-center gap-3 px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-colors ${websiteConfig.menuSelector === item.href ? "bg-zinc-700 hover:bg-stone-900 text-white hover:font-bold hover:text-white" : ""}`}
             >
-              <item.icon className="w-5 h-5" />
+              {/* <item.icon className="w-5 h-5" /> */}
               <span className="whitespace-nowrap">{item.name}</span>
             </a>
           ))}
